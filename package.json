@@ -1,0 +1,21 @@
+{
+  "name": "Musik German",
+  "main": "index.js",
+  "author": "Vecto.#9652",
+  "version": "1.0.0",
+  "repository": "",
+  "description": "Benutzung des Modules (discord-player).",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.3.3",
+    "cpu-stat": "^2.0.1",
+    "discord-player": "^3.4.0",
+    "discord.js": "^12.5.1",
+    "ffmpeg-static": "^4.2.7",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "opusscript": "0.0.8"
+  }
+}
