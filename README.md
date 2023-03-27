@@ -1,40 +1,46 @@
 # Musik-Discord-Bot
-Das ist der Source Code von unseren beiden Musik Discord Bots ("Musik German | PlayGS.de Netzwerk" &amp; "Musik English | PlayGS.de Netzwerk") Bots.
+***Das ist der Source Code von unseren beiden Musik Discord Bots ("Musik German | PlayGS.de Netzwerk" &amp; "Musik English | PlayGS.de Netzwerk") Bots.***
  
  
-Funktionen: 
+**Funktionen**
 
 - Musik System
  
  
-Commands:
- 
-- !youtube
-- !volume
-- !stats
-- !skipto
-- !skip
-- !shuffle
-- !seek
-- !search
-- !resume
-- !remove
-- !queue
-- !play
-- !pause
-- !nowplaying
-- !move
-- !lyrics
-- !loopqueue
-- !loop
-- !invite
-- !grab
-- !disconnect
-- !clear
-- !bassboost
-- !bump
+**Commands**
+
+core:
 - !help
+
+infos:
+- !debug
+- !ping
+
+music:
+- !clear-queue
+- !filter
+- !loop
+- !nowplaying
+- !pause
+- !play
+- !queue
+- !resume
+- !search
+- !shuffle
+- !skip
+- !stop
+- !volume
+- !w-filters
+
+
+**Installation & Start & Ändern der Daten & Support & Copyright**
+
+Installations-Wiki: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Installation
+Ändern der Daten-Wiki: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/%C3%84ndern-der-Daten
+Starten-Wiki: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Starten
+Support-Wiki: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Support
+Copyright-Wiki: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Copyright
  
  
-Fallen euch Bugs oder Fehler auf, schreibt uns
-einen Report zusammen mit dem Fehler, oder dem Bug.
+**Fallen euch Bugs oder Fehler auf, schreibt uns
+einen Report zusammen mit dem Fehler, oder dem Bug.**
