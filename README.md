@@ -36,9 +36,13 @@ music:
 **Installation & Start & Ändern der Daten & Support & Copyright**
 
 Installations-Wiki: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Installation
+
 Ändern der Daten-Wiki: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/%C3%84ndern-der-Daten
+
 Starten-Wiki: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Starten
+
 Support-Wiki: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Support
+
 Copyright-Wiki: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Copyright
  
  
