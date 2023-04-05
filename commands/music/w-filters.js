@@ -9,7 +9,7 @@ module.exports = {
 
         if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - Sie befinden sich nicht im selben Sprachkanal!`);
 
-        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - Derzeit wird keine Musik abgespielt!`);
+        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - Zur Zeit wird keine Musik abgespielt!`);
 
         const filtersStatuses = [[], []];
 
@@ -21,13 +21,13 @@ module.exports = {
         message.channel.send({
             embed: {
                 color: 'ORANGE',
-                footer: { text: '© Copyright 2021 Bre4kF4st.com | All rights reserved.' },
+                footer: { text: 'Copyright © 2022 PlayGS Netzwerk | Alle rechte vorbehalten.' },
                 fields: [
-                    { name: 'Filters', value: filtersStatuses[0].join('\n'), inline: true },
+                    { name: 'Filter', value: filtersStatuses[0].join('\n'), inline: true },
                     { name: '** **', value: filtersStatuses[1].join('\n'), inline: true },
                 ],
                 timestamp: new Date(),
-                description: `Liste aller aktivierten oder deaktivierten Filter.\nGebrauche \`${client.config.discord.prefix}filter\` So fügen Sie einem Musiktitel einen Filter hinzu.`,
+                description: `Liste aller aktivierten oder deaktivierten Filter.\nBenutze \`${client.config.discord.prefix}filter\` , um einem Musiktitel einen Filter hinzuzufügen.`,
             },
         });
     },

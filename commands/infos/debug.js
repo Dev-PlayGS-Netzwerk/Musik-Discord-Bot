@@ -5,6 +5,6 @@ module.exports = {
     utilisation: '{prefix}debug',
 
     execute(client, message) {
-        message.channel.send(`${client.emotes.success} - ${client.user.username} ist im **${client.voice.connections.size}** Sprachkanal!`);
+        message.channel.send(`${client.emotes.success} - ${client.user.username} verbunden in **${client.voice.connections.size}** Kanälen!`);
     },
 };

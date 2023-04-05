@@ -9,7 +9,7 @@ module.exports = {
 
         if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - Sie befinden sich nicht im selben Sprachkanal!`);
 
-        if (!args[0]) return message.channel.send(`${client.emotes.error} - Bitte geben Sie den Titel eines Liedes an.!`);
+        if (!args[0]) return message.channel.send(`${client.emotes.error} - Bitte geben Sie den Titel eines Liedes an!`);
 
         client.player.play(message, args.join(" "));
     },

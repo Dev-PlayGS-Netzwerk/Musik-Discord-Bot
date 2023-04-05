@@ -5,17 +5,17 @@ module.exports = {
     utilisation: '{prefix}filter [filter name]',
 
     execute(client, message, args) {
-        if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} - Du bist in keinem Sprachkanal!`);
+        if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} - Sie befinden sich nicht in einem Sprachkanal!`);
 
-        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - Du bist nicht in dem selben Sprachkanal!`);
+        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - Sie befinden sich nicht im selben Sprachkanal!`);
 
-        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - Momentan spielt keine Musik!`);
+        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - Zur Zeit wird keine Musik abgespielt!`);
 
-        if (!args[0]) return message.channel.send(`${client.emotes.error} - Bitte spezifiziere dich bei den Filtern welchen du aktivieren oder deaktivieren möchtest!`);
+        if (!args[0]) return message.channel.send(`${client.emotes.error} - Bitte geben Sie einen gültigen Filter zum Aktivieren oder Deaktivieren an!`);
 
         const filterToUpdate = client.filters.find((x) => x.toLowerCase() === args[0].toLowerCase());
 
-        if (!filterToUpdate) return message.channel.send(`${client.emotes.error} - Dieser Filter existiert nicht, versuche einen dieser Filter (8D, vibrato, pulsator...) !`);
+        if (!filterToUpdate) return message.channel.send(`${client.emotes.error} - Diesen Filter gibt es nicht, versuchen Sie es zum Beispiel (8D, Vibrato, Pulsator...) !`);
 
         const filtersUpdated = {};
 
@@ -23,7 +23,7 @@ module.exports = {
 
         client.player.setFilters(message, filtersUpdated);
 
-        if (filtersUpdated[filterToUpdate]) message.channel.send(`${client.emotes.music} - Der angeforderte Filter wird **hinzugefügt**, bitte warte... Notiz : um so länger der Song ist, desto länger dauert es den Filter drüber zu spielen.`);
-        else message.channel.send(`${client.emotes.music} - Der angeforderte Filter wird **entfernt**, bitte warte... Notiz : um so länger der Song ist, desto länger dauert es den Filter drüber zu spielen.`);
+        if (filtersUpdated[filterToUpdate]) message.channel.send(`${client.emotes.music} - Ich füge den Filter zur Musik hinzu, bitte warten Sie ... Hinweis: Je länger die Musik ist, desto länger dauert es.`);
+        else message.channel.send(`${client.emotes.music} - Ich deaktiviere den Filter für die Musik, bitte warten Sie ... Hinweis: Je länger die Musik abgespielt wird, desto länger dauert es.`);
     },
 };

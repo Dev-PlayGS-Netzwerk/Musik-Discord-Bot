@@ -1,21 +1,21 @@
 module.exports = (client, error, message, ...args) => {
     switch (error) {
         case 'NotPlaying':
-            message.channel.send(`${client.emotes.error} - Es wird keine Musik mehr auf dem Server gespielt!`);
+            message.channel.send(`${client.emotes.error} - Auf diesem Server wird keine Musik abgespielt!`);
             break;
         case 'NotConnected':
-            message.channel.send(`${client.emotes.error} - Du bist in keinem Sprachkanal!`);
+            message.channel.send(`${client.emotes.error} - Sie sind in keinem Sprachkanal verbunden!`);
             break;
         case 'UnableToJoin':
-            message.channel.send(`${client.emotes.error} - Ich kann dem Kanal nicht beitreten, bitte prüfe meine Rechte!`);
+            message.channel.send(`${client.emotes.error} - Ich bin nicht in der Lage, Ihrem Sprachkanal beizutreten, bitte überprüfen Sie meine Berechtigungen!`);
             break;
         case 'VideoUnavailable':
-            message.channel.send(`${client.emotes.error} - ${args[0].title} ist nicht verfügbar in deinem Land! Überspringen...`);
+            message.channel.send(`${client.emotes.error} - ${args[0].title} ist in Ihrem Land nicht verfügbar! Überspringen...`);
             break;
         case 'MusicStarting':
-            message.channel.send(`Die Musik startet... Bitte warte und versuche es erneut!`);
+            message.channel.send(`Die Musik fängt an... Bitte warten Sie und versuchen Sie es erneut!`);
             break;
         default:
-            message.channel.send(`${client.emotes.error} - Etwas ist schief gelaufen... Fehler : ${error}`);
+            message.channel.send(`${client.emotes.error} - Irgendetwas ist schief gelaufen ... Fehler : ${error}`);
     };
 };

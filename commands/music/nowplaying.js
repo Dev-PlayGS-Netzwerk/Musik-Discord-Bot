@@ -5,11 +5,11 @@ module.exports = {
     utilisation: '{prefix}nowplaying',
 
     execute(client, message) {
-        if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} - Du bist in keinem Sprachkanal !`);
+        if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} - Sie befinden sich nicht in einem Sprachkanal!`);
 
-        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - Du bist nicht in dem selben Sprachkanal!`);
+        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - Sie befinden sich nicht im selben Sprachkanal!`);
 
-        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - Momentan spielt keine Musik!`);
+        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - Zur Zeit wird keine Musik abgespielt!`);
 
         const track = client.player.nowPlaying(message);
         const filters = [];
@@ -20,21 +20,21 @@ module.exports = {
             embed: {
                 color: 'RED',
                 author: { name: track.title },
-                footer: { text: 'Copyright © 2021 PlayGS Netzwerk | Alle rechte vorbehalten.' },
+                footer: { text: 'Copyright © 2022 PlayGS Netzwerk | Alle rechte vorbehalten.' },
                 fields: [
                     { name: 'Kanal', value: track.author, inline: true },
-                    { name: 'Angefragt von', value: track.requestedBy.username, inline: true },
-                    { name: 'Von Playlist', value: track.fromPlaylist ? 'Yes' : 'No', inline: true },
+                    { name: 'Gewünscht von', value: track.requestedBy.username, inline: true },
+                    { name: 'Aus der Wiedergabeliste', value: track.fromPlaylist ? 'Yes' : 'No', inline: true },
 
-                    { name: 'Zuschauer', value: track.views, inline: true },
-                    { name: 'Länge', value: track.duration, inline: true },
+                    { name: 'Ansichten', value: track.views, inline: true },
+                    { name: 'Dauer', value: track.duration, inline: true },
                     { name: 'Filter aktiviert', value: filters.length + '/' + client.filters.length, inline: true },
 
                     { name: 'Lautstärke', value: client.player.getQueue(message).volume, inline: true },
-                    { name: 'Wiederholungs Modus', value: client.player.getQueue(message).repeatMode ? 'Yes' : 'No', inline: true },
-                    { name: 'Gerade pausiert', value: client.player.getQueue(message).paused ? 'Yes' : 'No', inline: true },
+                    { name: 'Wiederholungsmodus', value: client.player.getQueue(message).repeatMode ? 'Yes' : 'No', inline: true },
+                    { name: 'Derzeit pausiert', value: client.player.getQueue(message).paused ? 'Yes' : 'No', inline: true },
 
-                    { name: 'Spielzeit', value: client.player.createProgressBar(message, { timecodes: true }), inline: true }
+                    { name: 'Fortschrittsbalken', value: client.player.createProgressBar(message, { timecodes: true }), inline: true }
                 ],
                 thumbnail: { url: track.thumbnail },
                 timestamp: new Date(),
