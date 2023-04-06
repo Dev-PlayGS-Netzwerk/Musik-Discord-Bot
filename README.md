@@ -38,7 +38,7 @@ music:
 !volume
 !w-filters
 ```
-```
+
 **Installation & Start & Ändern der Daten & Support & Copyright**
 
 *Installations-Wiki*: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Installation
@@ -50,7 +50,7 @@ music:
 *Support-Wiki*: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Support
 
 *Copyright-Wiki*: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Copyright
- ```
+ 
  
 **Fallen euch Bugs oder Fehler auf, schreibt uns
 einen Report zusammen mit dem Fehler, oder dem Bug.**
