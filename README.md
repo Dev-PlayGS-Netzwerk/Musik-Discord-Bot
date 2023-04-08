@@ -53,7 +53,7 @@
  
 # Bug Fund & Report
 
-**Bug Reporten**: https://github.com/Dev-PlayGS-Netzwerk/Status-Discord-Bot/issues
-
 **Fallen euch Bugs oder Fehler auf, schreibt uns
 einen Report zusammen mit dem Fehler, oder dem Bug.**
+
+**Bug Reporten**: https://github.com/Dev-PlayGS-Netzwerk/Status-Discord-Bot/issues
