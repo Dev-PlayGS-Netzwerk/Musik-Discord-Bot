@@ -5,23 +5,23 @@
 **Das ist der Source Code von unseren beiden Musik Discord Bots ("Musik German | PlayGS.de Netzwerk" &amp; "Musik English | PlayGS.de Netzwerk") Bots.**
  
  
-*Funktionen*
+# Funktionen
 ```
 - Musik System
  ```
  
-*Commands*
+# Commands
 
-core:
+**core**:
 ```
 !help
 ```
-infos:
+**infos**:
 ```
 !debug
 !ping
 ```
-music:
+**music**:
 ```
 !clear-queue
 !filter
@@ -39,7 +39,7 @@ music:
 !w-filters
 ```
 
-**Installation & Start & Ändern der Daten & Support & Copyright**
+# Installation & Start & Ändern der Daten & Support & Copyright
 
 *Installations-Wiki*: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Installation
 
