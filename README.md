@@ -51,6 +51,9 @@
 
 *Copyright-Wiki*: https://github.com/Dev-PlayGS-Netzwerk/Musik-Discord-Bot/wiki/Copyright
  
- 
+# Bug Fund & Report
+
+**Bug Reporten**: https://github.com/Dev-PlayGS-Netzwerk/Status-Discord-Bot/issues
+
 **Fallen euch Bugs oder Fehler auf, schreibt uns
 einen Report zusammen mit dem Fehler, oder dem Bug.**
